@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Rozwiązanie zadania PZC 1.1</title>
+    <script>
+
+        function setCurrentTime() {
+        var myDate = new Date();
+
+       
+        
+        document.getElementById('current-time').innerText = myDate.toISOString()
+    }
+
+        setInterval(function() {
+        setCurrentTime();
+        }, 400);
+    </script>
+</head>
+<body>
+    <div id="current-time"></div>
+</body>
